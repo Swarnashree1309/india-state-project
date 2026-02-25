@@ -8,7 +8,7 @@ pipeline {
                 git branch:'main' ,
                     url: 'https://github.com/Swarnashree1309/india-state-project.git'
             }
-        }
+        } 
 
         stage('Build Docker Image') {
             steps {
