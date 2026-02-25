@@ -5,7 +5,8 @@ pipeline {
  
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Swarnashree1309/india-state-project.git'
+                git branch:'main' ,
+                    url: 'https://github.com/Swarnashree1309/india-state-project.git'
             }
         }
 
