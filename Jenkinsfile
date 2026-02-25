@@ -19,7 +19,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 sh '''
-                docker stop india-container || true
+                docker stop india|| true
                 docker rm india-container || true
                 docker run -d -p 8080:80 --name india-container india-states-app
                 '''
