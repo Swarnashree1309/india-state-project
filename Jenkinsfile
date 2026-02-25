@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t india-states-app .'
+                sh 'docker build -t india-states-app .' 
             }
         }
 
