@@ -21,7 +21,7 @@ pipeline {
                 sh '''
                 docker stop india|| true
                 docker rm india-container || true
-                docker run -d -p 8080:80 --name india-container india-states-app
+                docker run -d -p 8000:80 --name india-container india-states-app
                 '''
             }
         }
